@@ -3,6 +3,7 @@
 
     <head>
     <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>True-cash</title>
     <link rel="stylesheet" type="text/css" href="style/styles.css" />
 </head>
@@ -12,7 +13,7 @@
 
         <header>
             <div class="contacts">
-                <div class="contacts-item"><img src="img/truecash.png" width="126px" height="58px"></div>
+                <div class="contacts-item"><img src="img/truecash.png" ></div>
                 <div class="list contacts-item">
                     <ul class="date-1">
                         <li>Минск, ул.Плеханова, 55/1 оф. 1</li>
@@ -41,103 +42,60 @@
         </header>
         <div class="content">
             <div class="banner">
-                <img src="img/banner.png" width="1024px" height="322px">
+                <img class="banner-img" src="img/banner.png">
+                <img class="helps-img" src="img/helps.png">
             </div>
             <div class="main">
-                <div class="first-line">
 
-                    <div class="gold">
+                    <a href="#" class="gold items restangle1 parfume-gold">
+                                <img class="icon" src="img/gold.png" >
+                                <p class="restangle-text">ЗОЛОТО</p>
+                         </a>
 
-                        <a href="#">
-                            <div class="restangle1">
-                                <img src="img/gold.png" width="265px" height="146px">
-                                <p>ЗОЛОТО</p>
-                            </div>
+                    <a href="#" class="technics items restangle2">
+                                <img class="icon" src="img/technics.png" >
+                                <p class="restangle-text">ЭЛЕКТРОННАЯ ТЕХНИКА</p>
+                </a>
+                    <a href="#" class="silver items restangle3">
+                                <img class="icon" src="img/silver.png">
+                                <p class="restangle-text">СЕРЕБРО</p>
                         </a>
-                    </div>
+                    
+                    <a href="#" class="jewelry items restangle4">
+ <img class="icon" src="img/jewerly.png">
+                                <p class="restangle-text">ЮВЕЛИРНЫЕ ИЗДЕЛИЯ</p>
+                        </a>
+                    
+                    <a href="#" class="smartphone items restangle5">
+                                <img class="icon" src="img/smartphone.png">
+                                <p class="restangle-text">СМАРТФОНЫ<br> И ПЛАНШЕТЫ</p>
+                        </a>          
 
-                    <div class="technics">
-
-                        <a href="#">
-                            <div class="restangle2">
-                                <img src="img/technics.png" width="447px" height="208px">
-                                <p>ЭЛЕКТРОННАЯ ТЕХНИКА</p>
-                            </div>
+                    <a href="#" class="clock items restangle6">
+                                <img class="icon" src="img/clock.png" >
+                                <p class="restangle-text">скупка часов</p>
+                        </a>
+                    
+                    <a href="#" class="parfume items restangle7 parfume-gold">
+                        <img class="icon" src="img/parfume.png">
+                        <p class="restangle-text">Оригинальная парфюмерия</p>     
                         </a>
 
-                    </div>
-                </div>
-                <div class="second-line">
-
-                    <div class="silver">
-                        <a href="#">
-                            <div class="restangle3">
-                                <img src="img/silver.png" width="266px" height="146px">
-                                <p>СЕРЕБРО</p>
-                            </div>
+                    <a href="#" class="auto items restangle8">
+                                <img class="icon" src="img/auto.png" >
+                                <p class="restangle-text">выкуп авто</p>
                         </a>
-                    </div>
-                    <div class="jewelry">
-                        <a href="#">
-                            <div class="restangle4"><img src="img/jewerly.png">
-                                <p>ЮВЕЛИРНЫЕ ИЗДЕЛИЯ</p>
-                            </div>
+                    
+                    <a href="#" class="instruments items restangle9">
+                            <img class="icon" src="img/instruments.png">
+                                <p class="restangle-text">инструменты</p>
                         </a>
-                    </div>
-                    <div class="smartphone">
-                        <a href="#">
-                            <div class="restangle5">
-                                <img src="img/smartphone.png">
-                                <p>СМАРТФОНЫ<br> И ПЛАНШЕТЫ</p>
-                            </div>
+    
+                    <a href="#" class="sport items restangle10">
+                                <img class="icon" src="img/sport.png">
+                                <p class="restangle-text">спортивный и туристический займ</p>
                         </a>
-                    </div>
-                </div>
-                <div class="third-line">
-
-                    <div class="clock">
-                        <a href="#">
-                            <div class="restangle6">
-                                <img src="img/clock.png" width="160px" height="312px">
-                                <p>скупка часов</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="parfume">
-                        <a href="#">
-                            <div class="restangle7"><img src="img/parfume.png">
-                                <p>Оригинальная парфюмерия</p>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="fourth-line">
-
-                    <div class="auto">
-                        <a href="#">
-                            <div class="restangle8">
-                                <img src="img/auto.png" width="292px" height="224px">
-                                <p>выкуп авто</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="instruments">
-                        <a href="#">
-                            <div class="restangle9"><img src="img/instruments.png">
-                                <p>инструменты</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="sport">
-                        <a href="#">
-                            <div class="restangle10">
-                                <img src="img/sport.png">
-                                <p>спортивный и туристический займ</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                
             </div>
             <div class="slider">
                 <div class="block1">
@@ -152,24 +110,26 @@
                             <button onclick="minus()">-</button>
                             <input id="slider_1" class="slider-input" name="slider-1" type="range" min="0" max="2000" step="50" value="250" oninput="changed()">
                             <button>+</button>
+                            <span class="slider-1_mob">
                             <output id="slider-1" for="slider-1"><span id="money" /> </output>
 
                             <span id="slider-value">BYN</span>
+                            </span>
                         </div>
                         <label>Срок займа?</label>
                         <div class="input-days">
                             <button>-</button>
                             <input id="slider_2" class="slider-input" name="slider-2" type="range" min="0" max="60" step="1" value="10" oninput="changed2()">
                             <button>+</button>
+                            <span class="slider-2_mob">
                             <output id="slider-2" for="slider-2"><span id="days" /></output>
-                            <span id="slider-value">дней</span>
+                                <span id="slider-value">дней</span></span>
                         </div>
 
 
                     </div>
                 </div>
                 <div class="block2">
-                    <img src="img/calc.png">
                     <div class="get-return">
                         <div class="text left">
                             <span>Получить</span>
@@ -183,19 +143,20 @@
                     </div>
                     <hr id="persent"/>
                     <div class="get-return" style="margin-top: 0;">
-                        <div class="text " >
+                        <div class="text left" >
                             <span>Вернуть </span>
                             <span id="date">Дата возврата </span>
                             <span id="date">Дневная ставка </span>
                         </div>
-                        <div class="numbers">
+                        <div class="numbers right" >
                             <span>500 BYN</span>
                             <span id="date">23 авг 2020</span>
                             <span id="date">1,2% в день</span>
                         </div>
+                        
                     </div>
+                    <img src="img/calc.png">
                     <button class="get-money">Получить 250 BYN </button>
-
                 </div>
 
 
